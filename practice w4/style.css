@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    width: 700px;
+    height: 150px;
+    background-color: darkcyan;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .item {
+    background-color: lightcyan;
+    width: 50px;
+    height: auto;
+    text-align: center;
+    flex-shrink: 1;
+    margin: 0 10px 0 10px;
+}
+
+.container .empty {
+    flex-grow: 1;
+}
