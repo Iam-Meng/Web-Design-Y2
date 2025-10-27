@@ -1,0 +1,44 @@
+body {
+  background: grey;
+  font-family: sans-serif;
+}
+
+.items {
+  background-color: white;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 10px;
+  padding: 20px; 
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+p {
+  text-align: left; 
+  margin: 0 0 20px 0; 
+}
+
+.button1,.button2, .button3 {
+  border-radius: 30px;
+  padding: 8px 16px;
+  border: none;
+  color: white;
+  display: inline-block;
+  background: #777;
+}
+
+.button1:hover {
+    cursor: pointer;
+    color: white;
+    background: green;
+}
+.button2:hover {
+    cursor: pointer;
+    color: black;
+    background: orange;
+}
+.button3:hover {
+    cursor: pointer;
+    color: white;
+    background: purple;
+}
