@@ -1,0 +1,31 @@
+flowchart TD
+  A[Start: Plan Dashboard] --> B[Create project folder]
+  B --> C[Make index.html file]
+  C --> D[Add main container .grid-container]
+
+  D --> E[Build header section]
+  E --> E1[.menu-left - Home, Profile, Stats, Settings]
+  E --> E2[.header-title - Void]
+  E --> E3[.profile-right - Profile Image]
+
+  D --> F[Build main section]
+  F --> F1[.account-info - name, title, bio, skills]
+  F --> F2[.base-info - home, pets, fav weapon, fav role]
+  F --> F3[.achievements - table of achievements]
+  F --> F4[.current-quest - Find a girlfriend XD]
+
+  D --> G[Build footer section]
+  G --> G1[Text: © 2025 Void - The Glorious Dreamer]
+
+  G --> H[Test structure in browser]
+  H --> I{Does layout look correct?}
+  I -->|No| D
+  I -->|Yes| J[Start CSS styling manually]
+
+  J --> K[Use CSS Grid for layout]
+  K --> K1[Header: 3 columns - menu, title, image]
+  K --> K2[Main: stacked sections with spacing]
+  K --> K3[Footer: centered text]
+
+  K --> L[Add Minecraft-style design later]
+  L --> M[Finish Dashboard - Done]
