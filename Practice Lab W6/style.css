@@ -1,0 +1,136 @@
+h1 {
+  background-color: rgb(0, 159, 187);
+  border-radius: 10px;
+  width: 300px;
+  height: 40px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 30px;
+  box-shadow: 1px 2px #000000;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+body {
+  background-color: rgba(164, 164, 164, 0.718);
+  padding: 30px;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 40px solid rgba(55, 131, 194, 0.633);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+  padding: 30px 30px 20px 30px;
+  box-shadow: 0 2px 16px rgba(5, 4, 4, 0.2);
+}
+
+.item-item3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+label {
+  font-size: 14px;
+  color: rgb(59, 109, 68);
+  font-weight: 50;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px 10px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.item-item3 {
+  grid-column: 1/3;
+  text-align: left;
+}
+
+.item-item11 {
+  grid-column: 1/3;
+  text-align: right;
+}
+
+.item-item9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+span {
+  background-color: rgb(3, 183, 63);
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px;
+  color: #ffffff;
+  box-shadow: 1px 1px #000000;
+}
+
+#income {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 60%;
+  height: 5px;
+  border-radius: 5px;
+  background: linear-gradient(
+    to right,
+    rgb(194, 48, 48),
+    rgb(244, 244, 63),
+    rgb(0, 255, 68)
+  );
+  outline: none;
+}
+
+#income::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background: #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.item-item12 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+#submit {
+  background-color: #037911;
+  color: aliceblue;
+  border-radius: 10px;
+  height: 30px;
+}

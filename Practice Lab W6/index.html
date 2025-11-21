@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Create Account</h1>
+    </div>
+    <div class="container">
+      <div class="item item1">
+        <label for="Fname">Firstname*</label><br />
+        <input type="text" id="Fname" placeholder="Enter your first name" />
+      </div>
+      <div class="item item2">
+        <label for="Lname">Lastname*</label><br />
+        <input type="text" id="Lname" placeholder="Enter your last name" />
+      </div>
+      <div class="item-item3">
+        <label for="email">Email*</label><br />
+        <input type="email" id="email" placeholder="Enter your email" />
+      </div>
+      <div class="item item4">
+        <label for="password">Password*</label><br />
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+        />
+      </div>
+      <div class="item item5">
+        <label for="confirm-password">Confirm Password*</label><br />
+        <input
+          type="password"
+          id="confirm-password"
+          placeholder="Confirm your password"
+        />
+      </div>
+      <div class="item-item6">
+        <label for="Gender">Gender:</label><br />
+        <input type="radio" id="male" name="gender" value="male" /> Male
+        <input type="radio" id="female" name="gender" value="female" /> Female
+        <input type="radio" id="other" name="gender" value="other" /> Other
+      </div>
+      <div class="item-item7">
+        <label for="hobbies">Hobbies</label><br />
+        <input type="radio" id="hobby1" name="hobbies" value="hobby1" /> Music
+        <input type="radio" id="hobby2" name="hobbies" value="hobby2" /> Sport
+        <input type="radio" id="hobby3" name="hobbies" value="hobby3" /> Travel
+        <input type="radio" id="hobby4" name="hobbies" value="hobby4" /> Movies
+      </div>
+      <div class="item-item8">
+        <label for="Source of income">Source of income</label><br />
+        <select name="Source of income" id="Source of income">
+          <option value="Employed">Employed</option>
+          <option value="Self-Employed">Self-Employed</option>
+          <option value="Unemployed">Unemployed</option>
+        </select>
+      </div>
+      <div class="item-item9">
+        <label for="income">Income</label><br />
+        <input
+          type="range"
+          id="income"
+          name="income"
+          min="0"
+          max="1000"
+          value="0"
+          oninput="incomeValue.textContent = this.value"
+        />
+        <span id="incomeValue">0</span>
+      </div>
+      <div>
+        <label for="Upload profile picture">Upload profile picture</label><br />
+        <input type="file" id="profile-picture" name="profile-picture" />
+      </div>
+      <div>
+        <label for="age">Age</label><br />
+        <input type="text" id="age" placeholder="Enter your age" />
+      </div>
+      <div class="item-item11">
+        <label for="bio">Bio</label><br />
+        <textarea id="bio" rows="5" placeholder="Imfomation"></textarea>
+      </div>
+    </div>
+    <div class="item-item12">
+      <input type="submit" id="submit" value="Create" />
+    </div>
+  </body>
+</html>

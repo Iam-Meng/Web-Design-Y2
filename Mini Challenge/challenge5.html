@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkbox</title>
+    <style>
+      input[type="checkbox"] {
+        color: red;
+      }
+      input[type="checkbox"]:checked {
+        color: green;
+      }
+      input[type="checkbox"]:indeterminate {
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="checkbox" id="html" name="html" />
+      <label for="html">HTML</label><br /><br />
+      <input type="checkbox" id="css" name="css" />
+      <label for="css">CSS</label><br /><br />
+      <input type="checkbox" id="js" name="js" />
+      <label for="js">JavaScript</label><br /><br />
+    </form>
+  </body>
+</html>
