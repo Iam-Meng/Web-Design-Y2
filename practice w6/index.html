@@ -4,11 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Grid</title>
-
     <style>
       .grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* Default: 4 columns */
+        grid-template-columns: repeat(4, 1fr);
         gap: 16px;
         padding: 20px;
       }
@@ -18,18 +17,14 @@
         height: 100px;
         border-radius: 6px;
       }
-
-      /* ≤ 768px → 2 columns */
       @media screen and (max-width: 768px) {
         .grid {
-          grid-template-columns: repeat(2, 1fr); /* Default: 4 columns */
+          grid-template-columns: repeat(2, 1fr);
         }
       }
-
-      /* ≤ 320px → 1 column */
       @media screen and (max-width: 320px) {
         .grid {
-          grid-template-columns: repeat(1, 1fr); /* Default: 4 columns */
+          grid-template-columns: repeat(1, 1fr);
         }
       }
     </style>
