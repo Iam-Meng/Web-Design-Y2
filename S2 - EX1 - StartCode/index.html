@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StudyHub — Learning Resources</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="min-h-screen bg-slate-50 text-slate-900 flex justify-center items-start p-6">
+    <div class="w-full max-w-[1100px]">
+      <!-- Header -->
+      <header class="flex justify-between items-center gap-4 mb-6 flex-wrap">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-600 to-cyan-400 flex items-center justify-center text-white font-bold shadow-md">
+            SH
+          </div>
+          <div>
+            <div class="font-extrabold">StudyHub</div>
+            <div class="text-sm text-slate-500">Learn together • Build faster</div>
+          </div>
+        </div>
+
+        <nav class="flex gap-4 items-center text-slate-600 font-semibold flex-wrap">
+          <a href="#courses" class="px-3 py-2 rounded-md hover:text-slate-800">Courses</a>
+          <a href="#resources" class="px-3 py-2 rounded-md hover:text-slate-800">Resources</a>
+          <a href="#community" class="px-3 py-2 rounded-md hover:text-slate-800">Community</a>
+          <a href="#signup" class="px-3 py-2 rounded-md bg-blue-600 text-white">Get Started</a>
+        </nav>
+      </header>
+
+      <!-- Hero -->
+      <section class="grid md:grid-cols-1 lg:grid-cols-[1fr_420px] gap-6 items-center mb-7">
+
+        <div class="bg-white/80 backdrop-blur-sm p-7 rounded-xl shadow-md">
+          <h1 class="text-2xl font-bold mb-3">Your weekly learning playground</h1>
+          <p class="text-slate-500 mb-4">Curated bite-sized courses, hands-on projects, and community challenges to keep you learning consistently.</p>
+
+          <div class="flex gap-3 mb-5">
+            <button class="px-4 py-3 rounded-xl font-bold bg-blue-600 text-white">Explore Courses</button>
+            <button class="px-4 py-3 rounded-xl font-bold border-2 border-slate-200 text-blue-600">Join Community</button>
+          </div>
+
+          <hr class="border-t border-slate-200 my-4" />
+
+          <div class="flex gap-4 flex-wrap text-sm">
+            <div class="min-w-[160px]">
+              <div class="text-slate-500">Next live workshop</div>
+              <div class="font-bold">Stateful APIs • Dec 15</div>
+            </div>
+            <div class="min-w-[160px]">
+              <div class="text-slate-500">Active learners</div>
+              <div class="font-bold">3,412</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Signup card -->
+        <aside class="bg-white p-6 rounded-xl shadow-md">
+          <h2 class="text-lg font-semibold mb-2">Start your free plan</h2>
+          <p class="text-slate-500 mb-3">No credit card — upgrade anytime.</p>
+
+          <form id="signup" class="flex flex-col gap-3">
+            <input type="text" placeholder="Full name" class="p-2 border border-slate-200 rounded-lg" />
+            <input type="email" placeholder="Email address" class="p-2 border border-slate-200 rounded-lg" />
+            <button type="submit" class="px-4 py-3 rounded-xl font-bold bg-blue-600 text-white">Create account</button>
+          </form>
+        </aside>
+      </section>
+
+      <!-- Features -->
+      <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-7">
+        <div class="bg-white p-5 rounded-xl shadow-sm flex gap-3 items-start">
+          <div class="w-12 h-12 rounded-xl bg-indigo-100 flex items-center justify-center font-bold">PG</div>
+          <div>
+            <h3 class="font-semibold mb-1">Project Guided</h3>
+            <p class="text-sm text-slate-500">Short projects with guided steps and solution walkthroughs.</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl shadow-sm flex gap-3 items-start">
+          <div class="w-12 h-12 rounded-xl bg-orange-100 flex items-center justify-center font-bold">LR</div>
+          <div>
+            <h3 class="font-semibold mb-1">Learning Roadmaps</h3>
+            <p class="text-sm text-slate-500">Structured paths from beginner to job-ready levels.</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl shadow-sm flex gap-3 items-start">
+          <div class="w-12 h-12 rounded-xl bg-lime-100 flex items-center justify-center font-bold">CM</div>
+          <div>
+            <h3 class="font-semibold mb-1">Community Mentors</h3>
+            <p class="text-sm text-slate-500">Mentor hours and peer feedback to accelerate growth.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resources -->
+      <section id="resources" class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-7">
+        <article class="bg-white p-3 rounded-lg flex flex-col gap-2">
+          <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?q=80" class="w-full h-[110px] object-cover rounded-md" />
+          <h4 class="text-sm font-semibold">How to build a daily coding habit</h4>
+          <p class="text-xs text-slate-500">10 min read • Beginner</p>
+        </article>
+
+        <article class="bg-white p-3 rounded-lg flex flex-col gap-2">
+          <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80" class="w-full h-[110px] object-cover rounded-md" />
+          <h4 class="text-sm font-semibold">Deploy your first Node.js app</h4>
+          <p class="text-xs text-slate-500">30 min guide • Intermediate</p>
+        </article>
+
+        <article class="bg-white p-3 rounded-lg flex flex-col gap-2">
+          <img src="https://images.unsplash.com/photo-1515165562835-c6c8f2d0d6f9?q=80" class="w-full h-[110px] object-cover rounded-md" />
+          <h4 class="text-sm font-semibold">System design crash course</h4>
+          <p class="text-xs text-slate-500">45 min • Intermediate</p>
+        </article>
+
+        <article class="bg-white p-3 rounded-lg flex flex-col gap-2">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80" class="w-full h-[110px] object-cover rounded-md" />
+          <h4 class="text-sm font-semibold">How to work in open source</h4>
+          <p class="text-xs text-slate-500">25 min • All levels</p>
+        </article>
+      </section>
+
+      <!-- Two-column layout -->
+      <section class="grid lg:grid-cols-[2fr_1fr] gap-5 mb-7">
+        <div class="flex flex-col gap-4">
+
+          <div class="bg-white p-5 rounded-xl shadow-sm">
+            <h3 class="font-semibold mb-3">Your active courses</h3>
+            <div class="flex flex-col gap-3">
+
+              <div class="flex justify-between items-center gap-3">
+                <div>
+                  <div class="font-bold">Fullstack Basics</div>
+                  <div class="text-sm text-slate-500">Module 3 of 8</div>
+                </div>
+                <div class="min-w-[120px]">
+                  <div class="text-sm text-slate-500">Progress</div>
+                  <div class="h-2 bg-slate-200 rounded mt-1 overflow-hidden">
+                    <div class="h-full w-[78%] bg-gradient-to-r from-purple-600 to-cyan-400"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-center gap-3">
+                <div>
+                  <div class="font-bold">Intro to Databases</div>
+                  <div class="text-sm text-slate-500">Module 1 of 5</div>
+                </div>
+                <div class="min-w-[120px]">
+                  <div class="text-sm text-slate-500">Progress</div>
+                  <div class="h-2 bg-slate-200 rounded mt-1 overflow-hidden">
+                    <div class="h-full w-[36%] bg-gradient-to-r from-green-400 to-cyan-400"></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="bg-white p-5 rounded-xl shadow-sm">
+            <h3 class="font-semibold mb-3">Community Challenges</h3>
+            <ul class="grid gap-3">
+              <li class="bg-white p-3 rounded-lg flex justify-between items-center shadow-sm">
+                <div>
+                  <div class="font-bold">30-day JS challenge</div>
+                  <div class="text-sm text-slate-500">Day 12 • 120 people active</div>
+                </div>
+                <button class="px-4 py-2 rounded-lg font-bold border-2 border-slate-200 text-blue-600">Join</button>
+              </li>
+
+              <li class="bg-white p-3 rounded-lg flex justify-between items-center shadow-sm">
+                <div>
+                  <div class="font-bold">Weekly Algo Sprint</div>
+                  <div class="text-sm text-slate-500">Sat • 10:00 AM</div>
+                </div>
+                <button class="px-4 py-2 rounded-lg font-bold border-2 border-slate-200 text-blue-600">RSVP</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="bg-white p-5 rounded-xl shadow-sm flex flex-col gap-4">
+          <h4 class="font-semibold">Learning streak</h4>
+          <div class="flex justify-between items-center gap-3">
+            <div>
+              <div class="text-sm text-slate-500">This week</div>
+              <div class="font-bold">4 days</div>
+            </div>
+            <div class="flex-1 h-3 bg-indigo-50 rounded overflow-hidden">
+              <div class="h-full w-[64%] bg-gradient-to-r from-purple-600 to-cyan-400"></div>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-1">Recommended topic</h4>
+            <div class="font-bold">APIs with Express</div>
+            <p class="text-sm text-slate-500 mt-2">A short path to build and deploy a REST API in under an hour.</p>
+          </div>
+          <div class="mt-auto">
+            <h4 class="font-semibold mb-2">Account</h4>
+            <div class="text-sm text-slate-500">Email: student@example.com</div>
+            <button class="px-4 py-2 rounded-lg font-bold border-2 border-slate-200 text-blue-600 mt-3">Manage plan</button>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Footer -->
+      <footer class="grid md:grid-cols-1 lg:grid-cols-2 gap-4 mt-4 items-start">
+        <div>
+          <div class="font-extrabold">StudyHub</div>
+          <div class="text-sm text-slate-500">Learn together • Build faster</div>
+        </div>
+        <div class="flex gap-3 flex-wrap justify-end text-sm text-slate-500">
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Support</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
